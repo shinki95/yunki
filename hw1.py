@@ -10,13 +10,11 @@ name = input("What is your name: ")
 print(name)
 while num != goal:
     num = int(input())
+    count = count + 1
     if num > goal:
         print("Your guess is too high")
-        count =+ 1
     elif num < goal:
         print("Your guess is too low")
-        count =+ 1
     else:
         print("Good job")
-        print(count)
-    
+        print(count)    
