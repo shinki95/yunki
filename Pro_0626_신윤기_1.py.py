@@ -1,20 +1,18 @@
 # guess the number
 import random
-numbers = []
-for x in range(1,21):
-    numbers.append(x)
+numbers = list(range(1,21))
 goal = random.choice(numbers)
 count = 0
 num = 0
 name = input("What is your name: ")
-print(name)
+print(name, "Guess the number!")
 while num != goal:
     num = int(input())
-    count = count + 1
+    count += 1
     if num > goal:
         print("Your guess is too high")
     elif num < goal:
         print("Your guess is too low")
     else:
         print("Good job")
-        print(count)    
+        print("Count:", count)   
