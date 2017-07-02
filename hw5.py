@@ -36,4 +36,16 @@ elif input("원하시는 것을 선택하세요: ") == '뒷풀이':
 
 
 
+input("장소를 입력하세요: ") = restraunt
+input("식사를 입력하세요: ") = food
+
+class Meal:
+    def __init__(self, restraunt, food):
+        self.restraunt = restraunt
+        self.food = food
+
+    def print_info(self, restraunt, food):
+        print({}.format(self.restraunt))
+        print({}.format(self.food))
+
 
