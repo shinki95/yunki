@@ -5,5 +5,5 @@ for x in list_1:
     for y in list_2:
         if x + y == K:
             print(x, y)
-        else : 
+        else :
             pass
